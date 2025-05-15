@@ -1,0 +1,60 @@
+* {
+  margin: 1;
+  padding: 3px;
+}
+
+body {
+  color: #773300;
+  font-family: 'Dancing Script', cursive;
+  background-image:url(https://cdn.britannica.com/17/166817-050-1BDC8905/Mount-Apo-island-Mindanao-Philippines.jpg);
+  background-repeat: no-repeat;
+  background-size: 2000px 1000px;
+}
+
+.nav-link {
+  color: #773300;
+  background-color: #cc9955;
+}
+
+.navbar {
+  color: #773300;
+  background-color: #cc9955;
+}
+
+.navbar-brand {
+  color: #773300;
+  background-color: #cc9955;
+  border-radius: 6px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-between;
+  overflow: hidden;
+  color: beige;
+  background-color: #e17023;
+}
+
+.container {
+  background-color: #eecc88;
+}
+
+.container-fluid {
+  background-color: #eecc88;
+}
+
+.about {
+  text-align: center;
+}
+
+ 
+}

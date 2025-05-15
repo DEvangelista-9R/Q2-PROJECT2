@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProjectQ2</title>
+
+    <!-- SETUP BOOTSTRAP: link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link to JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Add style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Link to Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Eczar:wght@400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&family=Playwrite+TZ+Guides&family=Twinkle+Star&family=Yellowtail&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Colonialism</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#home">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#categories">categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#submit">submit recipe</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search" required>
+            <button class="btn btn-dark" type="button">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="tab-content mt-3">
+      <!-- Home -->
+      <div id="home" class="container tab-pane active text-center"><br>
+        <h1><b>Colonialism</b></h1>
+        <p>A Collection of all your childhood and classic Filipino cuisine</p>
+        <img src="https://sinaunangpanahon.com/wp-content/uploads/2024/04/Lapu-Lapu-Muslim.jpg" style="width: 1100px; height: 550px; max-width: 5000000px;" x>
+      </div>
+
+      <!-- Recipes -->
+      <div id="categories" class="container tab-pane fade"><br>
+        <h1 class="text-center"><b>Recipes</b></h1>
+        <div class="row justify-content-center">
+
+          <!-- Meal Card -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQuK2gFS5sxf5BbIaP7hj90GnBXZNdkcqhQBc-3CFtDSNEY276zQkcCpwrE2Vb6h4gPc0eiF0DqYO5OwWTPgBupkDR5DRcbogEfMoZAZj0" alt="Meal">
+              <div class="card-body">
+                <h4 class="card-title">Meal</h4>
+                <p class="card-text">Description</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalAdobo">Tap to see recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for Meal -->
+          <div class="modal" id="modalAdobo">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Bicol Express</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  Instructions: In a pan, heat oil while sautéing the onions, garlic, and ginger until fragrant. Add the sliced pork belly and cook until browned. Stir in shrimp paste and green/red chillies and cook for another 2 minutes. Pour in the coconut milk and bring to a simmer. Let it cook for 10-15 minutes until the pork is tender and the sauce thickens. Add shrimp, season with salt and pepper, and cook until shrimp is pink (about 5 minutes).
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Snack Card -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img class="card-img-top" src="https://images.getrecipekit.com/20240108201226-bbq-chicharrones-duet.jpg?width=650&quality=90&" alt="Snack">
+              <div class="card-body">
+                <h4 class="card-title">Snack</h4>
+                <p class="card-text">Description</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalChichi">Tap to see recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for Snack -->
+          <div class="modal" id="modalChichi">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Chicharron</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  Instructions: Cut the pork into 1-2 inch squares. Simmer pork in water with salt (and baking soda, if using) for 45 minutes until tender. Drain and pat pork dry completely. Heat oil in a deep pan, fry pork until golden and crispy.
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dessert Card -->
+          <div class="col-md-3 mb-3">
+            <div class="card">
+              <img class="card-img-top" src="https://www.businessnews.com.ph/wp-content/uploads/2017/03/sorbetes-recipe-1.jpg" alt="Dessert">
+              <div class="card-body">
+                <h4 class="card-title">Dessert</h4>
+                <p class="card-text">Description</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCream">Tap to see recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for Dessert -->
+          <div class="modal" id="modalCream">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Sorbetes (Dirty Ice Cream)</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  Instructions: Combine 2 cups coconut milk, 2 cups evaporated milk, 1 cup condensed milk, 1/2 cup sugar, and 1 tsp vanilla extract. Add flavoring (e.g., mango, ube, chocolate) in a pot and stir well. Over low heat, stir until slightly thickened and let cool. Pour into an ice cream maker and churn until creamy. If no ice cream maker, freeze in a container, stirring every hour for 4-6 hours. Transfer to a container and freeze until firm.
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Recipe -->
+      <div id="submit" class="container tab-pane fade"><br>
+        <h1 class="text-center"><b>Submit Your Recipes Here</b></h1>
+        <p class="text-center">Help us share the love by submitting your specialties!</p>
+        <form id="registration-form">
+          <div class="row">
+            <div class="col">
+              <label for="inputname" class="col-form-label">Recipe Name:</label>
+              <input type="text" class="form-control" id="inputname" placeholder="Your Recipe">
+            </div>
+            <div class="col">
+              <label for="inputingredient" class="col-form-label">Ingredients:</label>
+              <input type="text" class="form-control" id="inputingredient" placeholder="Ingredients">
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col">
+              <label for="inputsteps" class="col-form-label">Preparation Steps:</label>
+              <textarea class="form-control" id="inputsteps" rows="4" placeholder="Step by Step Instructions"></textarea>
+            </div>
+          </div><br>
+          <button type="submit" class="btn btn-dark">Submit Recipe</button>
+        </form>
+      </div>
+
+      <!-- About -->
+      <div id="about" class="container tab-pane fade"><br>
+        <h1 class="text-center"><b>About Us</b></h1>
+        <p class="text-center">A website dedicated to sharing Filipino colonial recipes. We aim to preserve and promote traditional dishes while encouraging creativity in modern cooking.</p>
+        <p class="text-center">Whether you are just starting out or a seasoned pro we have something off value for you</p>
+
+        <ul class="text-center"> Services we Offer
+           <dd> Various Filipino Cuisine Recipes</dd>
+           <dd> High Quality Customer Feedback </dd>
+           <dd> Share Your Recipes To Others </dd>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
